@@ -27,6 +27,8 @@ function menuMobol(){
     });
 };
 
+menuMobol()
+
 function sobreMin(){
 
     const divExperiencia = document.querySelectorAll('.experiencia-content div');

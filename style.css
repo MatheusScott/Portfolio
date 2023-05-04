@@ -202,6 +202,8 @@ main .sobre {
     background-color: #dc3545;
 }
 
+
+
 .sobre img {
     animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
@@ -235,6 +237,10 @@ main .sobre {
     font-size: 2.3rem;
     color: #fff;
     grid-column: 1/-1;
+}
+
+.sobre-texto h1 span {
+    color: #dc3545;
 }
 
 .sobre-texto h1::after {
@@ -585,3 +591,111 @@ main .sobre {
 .educacao-content ul li.ativo{
     color: #3e3d3d;
 } 
+
+/* FOOTER */
+
+footer {
+    background-color: #0e0d0d ;
+    padding: 30px;
+}
+
+.footer-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    color: #f7f7f7;
+}
+
+.footer-sociais li {
+    background-color: #212020;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.footer-sociais li i {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+}
+
+.footer-sociais li:hover{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color:  #3e3d3d;
+}
+
+.footer-sociais::before {
+    content: '';
+    height: 5px;
+    width: 200px;
+    bottom: 30px;
+    position: absolute;
+}
+
+footer .footer-comercial {
+    text-align: center;
+    color: #f7f7f7;
+    margin: 90px auto;
+    font-size: 1.5rem;
+    font-family: 'poppins';
+}
+
+@media only screen and (max-width: 992px) {
+
+    .sobre-titulo span {
+      height: 15px;
+      width: 15px;
+    }
+  
+    .sobre img {
+      max-width: 100%;
+    }
+  
+    .sobre-conteudo {
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+    }
+  
+    .sobre-texto h1 {
+      font-size: 2rem;
+    }
+  
+    .sobre-texto h1::after {
+      margin: 15px 0;
+      width: 40px;
+    }
+  
+    .sobre-texto p {
+      font-size: 1.1rem;
+    }
+  
+    .sobre-info {
+      grid-template-columns: 1fr;
+      grid-row-gap: 15px;
+      justify-items: center;
+    }
+  
+    .sobre-info i {
+      padding-right: 5px;
+      font-size: 1.2rem;
+    }
+  
+    .sobre-info p {
+      font-size:.8rem;
+  }
+
+  .sobre-titulo h1 {
+    font-size: 2rem;
+  }
+
+  .sobre-titulo p {
+    font-size: 1.2rem;
+  }
+
+  .sobre-titulo div {
+    align-items:center;
+}
+}
